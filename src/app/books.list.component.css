@@ -1,0 +1,21 @@
+.book-item {
+  display: flex;
+  margin-bottom: 1em;
+}
+.book-title {
+  margin: 0;
+}
+.book-thumb {
+  /* max-height: 10em; */
+}
+.book-info {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 1em;
+  max-width: 60%;
+}
+.btn-add {
+  /* width: 100%; */
+}

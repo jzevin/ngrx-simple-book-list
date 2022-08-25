@@ -1,0 +1,8 @@
+.books-collection {
+  display: flex;
+  flex-wrap: wrap;
+}
+.book-thumb {
+  width: 100%;
+  flex: 0 0 50%;
+}

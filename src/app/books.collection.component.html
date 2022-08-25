@@ -1,0 +1,9 @@
+<div class="books-collection">
+  <img
+    *ngFor="let book of books"
+    class="book-thumb"
+    (click)="remove.emit(book)"
+    [src]="book.volumeInfo.imageLinks.smallThumbnail"
+    alt=""
+  />
+</div>

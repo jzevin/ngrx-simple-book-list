@@ -1,0 +1,15 @@
+<div
+  class="book-item"
+  *ngFor="let book of books"
+>
+  <img class="book-thumb" [src]="book.volumeInfo.imageLinks.smallThumbnail" alt="">
+  <div class="book-info">
+    <h3 class="book-title">{{book.volumeInfo.title}}</h3>
+  <p class="book-authors">{{book.volumeInfo.authors}}</p>
+  <button
+    class="btn-add"
+    (click)="add.emit(book)"
+    data-test="add-button"
+  >Add to Collection</button>
+  </div>
+</div>
