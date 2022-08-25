@@ -1,3 +1,8 @@
+# NOTE:
+
+ this example is derived from the the NgRx Walkthrough example
+ https://ngrx.io/guide/store/walkthrough however, I refactored for `strict typescript` as the current example is not. I also added thumbnails and a little styling
+
 # NgrxSimpleBookList
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
