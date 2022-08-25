@@ -8,6 +8,8 @@ import { BookCollectionComponent } from './books.collection.component';
 import { booksCollectionReducer } from './books.collection.state.reducer';
 import { BookListComponent } from './books.list.component';
 import { booksReducer } from './books.state.reducer';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { booksReducer } from './books.state.reducer';
   imports: [
     BrowserModule,
     HttpClientModule,
-    StoreModule.forRoot({ books: booksReducer, collection: booksCollectionReducer })
+    StoreModule.forRoot({ books: booksReducer, collection: booksCollectionReducer }),
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
